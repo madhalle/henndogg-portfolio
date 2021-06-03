@@ -119,11 +119,15 @@ works:
         </ul>
       </div>
       <ul class='gallery'>
+        <!-- for deployment -->
+        {% include base.html %}
+        <!-- for deployment -->
         {% for image in site.static_files %}
             {% if image.path contains 'images/bangers/ski' %}
                 <li class='ski'>
                   <div class='overlay'>
-                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    <img src="{{ base }}{{ image.path }}" alt="image" />
+                    <!-- <img src="{{ site.baseurl }}{{ image.path }}" alt="image" /> -->
                   </div>
                 </li>
             {% endif %}
@@ -133,7 +137,8 @@ works:
             {% if image.path contains 'images/bangers/landscape' %}
                 <li class='landscapes'>
                   <div class='overlay'>
-                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    <img src="{{ base }}{{ image.path }}" alt="image" />
+                    <!-- <img src="{{ site.baseurl }}{{ image.path }}" alt="image" /> -->
                   </div>
                 </li>
             {% endif %}
@@ -143,7 +148,8 @@ works:
             {% if image.path contains 'images/bangers/outdoors' %}
                 <li class='outdoors'>
                   <div class='overlay'>
-                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    <img src="{{ base }}{{ image.path }}" alt="image" />
+                    <!-- <img src="{{ site.baseurl }}{{ image.path }}" alt="image" /> -->
                   </div>
                 </li>
             {% endif %}
@@ -153,7 +159,8 @@ works:
             {% if image.path contains 'images/bangers/people' %}
                 <li class='people'>
                   <div class='overlay'>
-                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    <img src="{{ base }}{{ image.path }}" alt="image" />
+                    <!-- <img src="{{ site.baseurl }}{{ image.path }}" alt="image" /> -->
                   </div>
                 </li>
             {% endif %}
@@ -163,7 +170,8 @@ works:
             {% if image.path contains 'images/bangers/portraits' %}
                 <li class='portraits'>
                   <div class='overlay'>
-                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    <img src="{{ base }}{{ image.path }}" alt="image" />
+                    <!-- <img src="{{ site.baseurl }}{{ image.path }}" alt="image" /> -->
                   </div>
                 </li>
             {% endif %}
