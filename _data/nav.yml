@@ -1,5 +1,5 @@
 - name: Home
-  path: portfolio.html
+  path: index.html
   section_id: home
 
 - name: Contact
